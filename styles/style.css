@@ -1,0 +1,162 @@
+/*Импорт гугл шрифта*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+.page {
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.link {
+  text-decoration: none;
+}
+.button {
+  z-index: 1;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-radius: 50%;
+  box-shadow: 0 0 15px #1f1f1f;
+  height: 60px;
+  width: 60px;
+  opacity: 0.8;
+}
+.button:hover {
+  opacity: 1;
+}
+/*Header*/
+.header {
+  width: 60%;
+  min-width: 370px;
+}
+.header__title {
+  margin: 30px;
+  font-size: 45px;
+  font-weight: 700;
+}
+.header__content {
+  display: flex;
+  flex-direction: column;
+  background: #1f1f1f;
+}
+.header__image {
+  width: 100%;
+}
+.header__text {
+  width: 70%;
+  margin: 0;
+  padding: 30px;
+  color: #fff;
+  font-size: 19px;
+  line-height: 29px;
+  text-align: justify;
+  align-self: center;
+}
+/*блок контент*/
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  min-width: 370px;
+}
+/*Стили абрацев*/
+.text__paragraph {
+  font-size: 19px;
+  line-height: 29px;
+  text-align: justify;
+}
+/*Кнопка вверх*/
+.button_up {
+  background: url(../images/arrow-up.png) no-repeat center;
+  background-size: 45px 35px;
+  position: fixed;
+  right: 20px;
+  bottom: 40px;
+}
+/*Слайдер*/
+.slider {
+  height: 500px;
+  margin: 20px 0 20px;
+}
+.slider__gallery {
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.slider__image {
+  max-height: 500px;
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+.slider__image_showed {
+  opacity: 1;
+}
+.slider__buttons {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.button_prev {
+  background: url(../images/prev.png) no-repeat center;
+  background-size: 45px 35px;
+}
+.button_next {
+  background: url(../images/next.png) no-repeat center;
+  background-size: 45px 35px;
+}
+/*Footer*/
+.footer {
+  box-sizing: border-box;
+  background-color: #1f1f1f;
+  min-height: 180px;
+  width: 60%;
+  min-width: 370px;
+  padding: 60px 0 40px;
+  display: flex;
+  justify-content: center;
+}
+/*Разбиваем содержисое на колонки (2)*/
+.footer__columns {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+}
+/*Общие стили колонок*/
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer__column:first-child {
+  justify-content: end;
+}
+.footer__author {
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0;
+  color: #fff;
+}
+.footer__column-heading {
+  text-align: center;
+  margin: 0;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+}
+.footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.footer__column_social {
+  flex-basis: 25%;
+}
+.footer__social-icon {
+  height: 30px;
+  width: 30px;
+}
